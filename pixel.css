@@ -1,0 +1,67 @@
+body{
+ margin: 0px;
+ padding: 0px;
+}
+.borderstyle{
+ display: inline-block;
+ border: 1px solid black;
+ padding: 5px 5px;
+ margin: 5px 5px;
+ height: 95px;
+ width: 281px;
+}
+#container{
+ height: 100vh;
+}
+.gridX{
+ height: 25px;
+ border: 1px solid darkgreen;
+ display: flex;
+}
+#gridContainer{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ height: 70%;
+ padding-top: 30px;
+}
+h1{
+ display: inline-block; 
+ font-family: "Tourney";
+ font-size: 100px;
+ margin: 0px;
+}
+h2{
+ margin-top: 0px;
+ margin-bottom: 3px;
+}
+label{
+ width: 100px;
+ display: inline-block;
+}
+.pixel{
+ border: 1px solid rgb(0, 0, 0);
+ display: inline-block;
+ height: 25px;
+ width: 25px;
+}
+.pixel2{
+ display: inline-block;
+ height: 25px;
+ width: 25px;
+ margin: 2px;
+}
+#propertiesContainer{
+ position: sticky;
+ top: 0px;
+ background-color: rgb(235, 145, 10);
+ width: 100%;
+ margin: 0px;
+ overflow: auto;
+}
+.tempColorPicker{
+ background-color: blue;
+ height: 30px;
+ width: 30px;
+}
+

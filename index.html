@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PixelArtMaker</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="pixel.css">
+</head>
+<body>
+
+<div id="container">
+
+  <div id="propertiesContainer">
+    
+    <fieldset class="borderstyle" style="margin-right: 50px;">
+      <legend><h2>Canvas Size</h2></legend> 
+        <form id="gridSize">
+
+          <label for="gridHeight">Grid Height: </label>
+          <input type="number" id="gridHeight" name="height" min="1" value="10">
+          
+          <label for="gridWidth">Grid Width: </label>
+          <input type="number" id="gridWidth" name="width" min="1" value="10">
+          
+          <input type="submit" value="Create" style="margin-top: 5px; float: right;"
+          onclick="makeGrid(document.getElementById('gridHeight').value, 
+          document.getElementById('gridWidth').value);return false">
+        </form>
+    </fieldset>
+
+    <fieldset class="borderstyle" style="float: right;">
+      <legend><h2>Cell Color</h2></legend>
+
+        <label for="color">Color Picker: </label>
+        <input type="color" id="color"><br>
+
+        <label for="colorPaletteAdd">Add to Color Palette: </label>
+        <input type="submit" value="+" onclick="addCurrentColorToPalette()">
+    </fieldset>
+
+    <h1>PIXELARTMAKER</h1>
+
+    <fieldset id="colorPalette" class="borderstyle" style="float: right; overflow: auto;">
+      <legend><h2>Color Palette</h2></legend>
+    </fieldset>  
+
+  </div>
+
+  <div id="gridContainer"></div>
+</div>
+
+ <script src="pixel.js"></script>
+</body>
+</html>
